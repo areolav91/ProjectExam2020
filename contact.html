@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Contact" />
+		<meta name="keywords" content="Nasa,contact, contact nasa, space" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Are Olav Andreassen" />
+		<title>Contact | Nasa</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header class="main-header">
+			<h1 class="right-logo"><a href="index.html">NASA INFO SITE</a></h1>
+			<ul class="main-nav">
+				<li><a href="about.html">About</a></li>
+				<li><a class="active">Contact</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</header>
+		<main class="container content">
+			<form id="contactForm">
+				<h1>Contact</h1>
+				<div class="form-group">
+					<input
+						class="form-control"
+						name="firstName"
+						id="firstName"
+						placeholder="First name"
+					/>
+					<div class="form-error" id="firstNameError"></div>
+				</div>
+
+				<div class="form-group">
+					<input
+						class="form-control"
+						name="lastName"
+						id="lastName"
+						placeholder="Last name"
+					/>
+					<div class="form-error" id="lastNameError"></div>
+				</div>
+
+				<div class="form-group">
+					<input
+						class="form-control"
+						name="email"
+						id="email"
+						placeholder="Email"
+					/>
+					<div class="form-error" id="emailError"></div>
+					<div class="form-error" id="invalidEmailError"></div>
+				</div>
+
+				<div class="form-group">
+					<textarea
+						class="form-control"
+						name="message"
+						id="message"
+						placeholder="Message (at least 10 characters)"
+					></textarea>
+					<div class="form-error" id="messageError"></div>
+				</div>
+
+				<button type="submit" id="submit">
+					Submit
+				</button>
+			</form>
+			<div class="nasamap">
+				<h1 id="mapHeader">Our position</h1>
+				<div id="map"></div>
+				<h2 id="mapbtm">300 E St SW, Washington, DC 20546, USA</h2>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-in">
+				<p>Are Olav Andreassen</p>
+			</div>
+			<div class="footer-in">
+				<a href="https://www.spacex.com/"> SpaceX</a>
+				<a href="https://spaceflightnow.com/launch-schedule/">
+					Upcoming launches</a
+				>
+				<a
+					href="https://nasasearch.nasa.gov/search/news?affiliate=nasa&channel=1616&query=&sort_by=r"
+				>
+					More on Nasa</a
+				>
+			</div>
+			<div class="footer-in">
+				<a href="https://www.facebook.com/NASA" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/nasa" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/nasa/" class="fa fa-instagram"></a>
+			</div>
+		</footer>
+		<script src="js/contact.js"></script>
+		<script
+			async
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn6GSo9BHJyikO6v-ab8DsLJ2J1OvA12o&callback=initMap"
+		></script>
+		<script src="js/map.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
