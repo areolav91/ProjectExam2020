@@ -49,7 +49,7 @@ h2 {
 }
 
 .active {
-	font-size: 150%;
+	font-weight: bold;
 }
 
 /*NAV*/
@@ -121,7 +121,7 @@ h2 {
 }
 
 .innerbtn:hover {
-	transform: scale(1.5);
+	color: gray;
 }
 
 /*Gallery*/
@@ -160,6 +160,7 @@ h2 {
 	border-style: solid;
 	background-color: black;
 	color: white;
+	cursor: pointer;
 }
 
 .results {
@@ -183,29 +184,23 @@ h2 {
 /*CONTACT PAGE*/
 .container {
 	border-radius: 5px;
-	padding: 150px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	width: 100%;
+	max-width: 100%;
 	text-align: center;
 }
 
 #contactForm {
 	background-color: #15094d;
-	display: flex;
+	display: inline-block;
 	flex-direction: column;
-	flex-wrap: wrap;
 	color: white;
-	flex-basis: 100%;
-	flex: 1;
-	flex-grow: 0.3;
-	height: 500px;
-	text-align: center;
-	font-family: "Space Mono", sans-serif;
+	align-items: center;
 }
 
 .form-group {
+	display: block;
 	padding-top: 50px;
 	padding: 12px 20px;
 	border: none;
@@ -213,28 +208,44 @@ h2 {
 	display: inline-block;
 }
 
-.form-control {
-	display: inline-block;
-	max-width: 100%;
+.form-group input[type="text"] {
+	display: block;
+	padding: 10px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;
+	font-family: "Space Mono", sans-serif;
 }
 
-#submit {
-	display: inline-block;
-	width: 10%;
-	align-self: center;
+.form-group textarea[type="text"] {
+	display: block;
+	padding: 10px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;
+	font-family: "Space Mono", sans-serif;
+}
+.subbtn {
+	padding: 10px;
+	width: 150px;
+	margin: 0 auto;
+	font-size: 17px;
+	font-family: "Space Mono", sans-serif;
+	border: gray;
+	border-style: solid;
+	background-color: black;
+	color: white;
+	cursor: pointer;
 }
 
 .nasamap {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 100%;
-	flex: 1;
-	flex-grow: 0.5;
-	height: 500px;
+	display: block;
 	text-align: center;
 }
 
-#map {
+#home {
 	flex-direction: column;
 	height: 400px;
 	width: 100%;
@@ -326,7 +337,8 @@ h2 {
 	.main-header,
 	.main-nav,
 	.up-row,
-	.aboutcontainer .container {
+	.aboutcontainer .container,
+	#contactForm {
 		display: flex;
 		width: 90%;
 		margin: 0 auto;
